@@ -1,4 +1,6 @@
 class Visit < ActiveRecord::Base
+  validates :user_id, :shortened_url_id, :presence => true
+  
   belongs_to(
     :user,
     :class_name => "User",
