@@ -18,6 +18,14 @@ ActiveRecord::Base.transaction do
   #   User.create!(:email => "santaclaus@northpole.com"), "christmas.com")
   # ShortenedUrl.create_for_user_and_long_url!(
 #     User.find(3), "elves.com")
-  ShortenedUrl.create_for_user_and_long_url!(
-    User.find(3), "coal.com")
+  # ShortenedUrl.create_for_user_and_long_url!(
+  #   User.find(3), "coal.com")
+  # Visit.create!(:user_id => 1, :shortened_url_id => 2)
+#   Visit.create!(:user_id => 1, :shortened_url_id => 4)
+#   Visit.create!(:user_id => 2, :shortened_url_id => 4)
+#   Visit.create!(:user_id => 3, :shortened_url_id => 1)
+Visit.create!(:user_id => 3, :shortened_url_id => 1)
+Visit.create!(:user_id => 2, :shortened_url_id => 1)
+Visit.create!(:user_id => 1, :shortened_url_id => 1)
+Visit.create!(:user_id => 3, :shortened_url_id => 1)
 end
